@@ -8,7 +8,7 @@ int main() {
   std::cout << "month: " << date.month() << std::endl;
   std::cout << "day: " << date.day() << std::endl;
 
-  Person person("John", "Doe", 1);
+  Person person("John", "Doe", 1, date);
   std::cout << "Full name: " << person.getFullName() << std::endl;
   
   return 0;
