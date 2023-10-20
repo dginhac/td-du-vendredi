@@ -18,5 +18,6 @@ std::string Person::getFullName() {
   else {
     gender = "Ms";
   }
-  return gender + " " + _firstname + " " + _lastname;
+
+  return gender + " " + _firstname + " " + _lastname + " né le " + _birthday.toString();
 }

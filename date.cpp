@@ -30,6 +30,11 @@ void Date::updateDay(int day) {
     _day = day;
 }
 
+std::string Date::toString() const {
+    return std::to_string(_month) + "/" + std::to_string(_day);
+}   
+
+
 bool Date::isDate(int month, int day) const {
     if ((day < 1) || (day>31)) return false;
     if ((month <1) || (month>12)) return false;

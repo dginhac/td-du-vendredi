@@ -6,6 +6,8 @@
   * @Summary:  Check valid date
   */
 
+ #include <string>
+
 #ifndef DATE_H
 #define DATE_H
 
@@ -16,6 +18,7 @@ public:
    int day() const;
    void updateMonth(int month);
    void updateDay(int day);
+   std::string toString() const;
 private:
    int _month;
    int _day;
